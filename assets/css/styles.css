@@ -3,11 +3,12 @@
 }
 
 .cards-container{
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 .card-wrapper {
-  display: inline-block;
-  margin: 10px;
+  margin-top: 30px;
   position: relative;
   overflow: hidden;
   width: 320px;
@@ -16,7 +17,6 @@
   color: white;
   font-family: sans-serif;
   background-color: gray;
-  text-align: left;
 }
 
 .card-wrapper:nth-child(3n) {
@@ -72,7 +72,7 @@
 
 .card-header {
   margin-bottom: 15px;
-  position: relative;
+  display: flex;
 }
 
 .heading {
@@ -80,8 +80,7 @@
 }
 
 .card-icon {
-  position: absolute;
-  right: 0;
+  margin-left: auto;
 }
 
 .digit-stats {
